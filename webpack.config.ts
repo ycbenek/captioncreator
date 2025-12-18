@@ -189,7 +189,7 @@ function buildDevConfig(options?: DevConfig): {
 
   const { port, enableHmr, appOrigin, enableHttps, certFile, keyFile } =
     options;
-  const host = "localhost";
+  const host = "0.0.0.0"; // IPv4 ve IPv6 için dinle
 
   let devServer: DevServerConfiguration = {
     server: enableHttps

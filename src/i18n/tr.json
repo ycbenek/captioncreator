@@ -1,0 +1,51 @@
+{
+  "app.title": "Gönderi Açıklaması Oluşturucu",
+  "app.subtitle": "Tasarımınızdaki metinlere göre AI ile sosyal medya caption'ı oluşturun",
+
+  "intro.howItWorks": "Nasıl Çalışır?",
+  "intro.description": "Tasarımınızdaki metinleri analiz ediyor, seçtiğiniz platform ve tona göre profesyonel gönderi açıklamaları oluşturuyoruz. Tek tıkla harika içerikler üretin!",
+  "intro.features": "Özellikler",
+  "intro.feature1": "7 farklı sosyal medya platformu desteği",
+  "intro.feature2": "6 farklı ton seçeneği (resmi, samimi, eğlenceli...)",
+  "intro.feature3": "Çok dilli içerik üretimi (TR/EN)",
+  "intro.feature4": "Caption'ı düzenleyebilir ve yeniden üretebilirsiniz",
+
+  "settings.title": "Ayarlar",
+  "settings.subtitle": "Platform, ton ve dil seçeneklerini belirleyin",
+  "settings.designTexts": "Tasarımdaki Metinler",
+
+  "result.title": "Caption Hazır!",
+  "result.subtitle": "İsterseniz düzenleyebilir ve kopyalayabilirsiniz",
+  "result.caption": "Oluşturulan Caption",
+  "result.tip": "İpucu",
+  "result.tipText": "Caption'ı istediğiniz gibi düzenleyebilirsiniz. Değişiklikleriniz otomatik olarak kaydedilir.",
+
+  "field.platform": "Platform",
+  "field.designType": "Tasarım Türü",
+  "field.tone": "Ton",
+  "field.language": "Dil",
+
+  "tone.formal": "Resmi",
+  "tone.casual": "Samimi",
+  "tone.fun": "Eğlenceli",
+  "tone.professional": "Profesyonel",
+  "tone.minimal": "Minimal",
+  "tone.inspiring": "İlham Verici",
+
+  "credits.title": "Kredi Bilgisi",
+  "credits.remaining": "Kalan: {remaining} / {total}",
+
+  "button.getStarted": "Başlayalım",
+  "button.back": "Geri",
+  "button.generate": "Caption Üret",
+  "button.generating": "Üretiliyor...",
+  "button.copy": "Kopyala",
+  "button.copied": "Kopyalandı",
+  "button.regenerate": "Yeniden Üret",
+
+  "error.noTexts": "Tasarımda metin bulunamadı. Lütfen tasarımınıza metin ekleyin.",
+  "error.creditLimit": "Aylık kredi limitiniz doldu. Pro'ya geçerek limitsiz kullanım elde edebilirsiniz.",
+  "error.rateLimit": "Çok fazla istek gönderdiniz. Lütfen biraz bekleyip tekrar deneyin.",
+  "error.generation": "Caption oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.",
+  "error.network": "Bağlantı hatası. Lütfen internet bağlantınızı kontrol edin."
+}

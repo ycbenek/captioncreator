@@ -1,0 +1,51 @@
+{
+  "app.title": "Caption Generator",
+  "app.subtitle": "Generate AI-powered social media captions based on your design texts",
+
+  "intro.howItWorks": "How It Works",
+  "intro.description": "We analyze the texts in your design and create professional social media captions tailored to your chosen platform and tone. Create amazing content with one click!",
+  "intro.features": "Features",
+  "intro.feature1": "Support for 7 different social media platforms",
+  "intro.feature2": "6 different tone options (formal, casual, fun...)",
+  "intro.feature3": "Multi-language content generation (TR/EN)",
+  "intro.feature4": "Edit and regenerate captions as you like",
+
+  "settings.title": "Settings",
+  "settings.subtitle": "Choose platform, tone, and language options",
+  "settings.designTexts": "Design Texts",
+
+  "result.title": "Caption Ready!",
+  "result.subtitle": "You can edit and copy it as you wish",
+  "result.caption": "Generated Caption",
+  "result.tip": "Tip",
+  "result.tipText": "You can edit the caption as you like. Your changes are saved automatically.",
+
+  "field.platform": "Platform",
+  "field.designType": "Design Type",
+  "field.tone": "Tone",
+  "field.language": "Language",
+
+  "tone.formal": "Formal",
+  "tone.casual": "Casual",
+  "tone.fun": "Fun",
+  "tone.professional": "Professional",
+  "tone.minimal": "Minimal",
+  "tone.inspiring": "Inspiring",
+
+  "credits.title": "Credit Info",
+  "credits.remaining": "Remaining: {remaining} / {total}",
+
+  "button.getStarted": "Get Started",
+  "button.back": "Back",
+  "button.generate": "Generate Caption",
+  "button.generating": "Generating...",
+  "button.copy": "Copy",
+  "button.copied": "Copied",
+  "button.regenerate": "Regenerate",
+
+  "error.noTexts": "No text found in design. Please add text to your design.",
+  "error.creditLimit": "Monthly credit limit reached. Upgrade to Pro for unlimited usage.",
+  "error.rateLimit": "Too many requests. Please wait a moment and try again.",
+  "error.generation": "An error occurred while generating caption. Please try again.",
+  "error.network": "Connection error. Please check your internet connection."
+}

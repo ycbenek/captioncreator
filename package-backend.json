@@ -1,0 +1,14 @@
+{
+  "name": "caption-generator-backend",
+  "version": "1.0.0",
+  "description": "Backend server for Caption Generator Canva App",
+  "main": "utils/backend/caption/server.ts",
+  "scripts": {
+    "start": "ts-node utils/backend/caption/server.ts",
+    "dev": "nodemon --watch utils/backend/caption --ext ts --exec ts-node utils/backend/caption/server.ts"
+  },
+  "keywords": ["canva", "caption", "ai", "backend"],
+  "author": "",
+  "license": "MIT"
+}
+
