@@ -44,9 +44,9 @@ KURALLAR:
 Caption:`;
 
   try {
-    // Gemini Pro - stable and reliable
+    // Gemini 1.5 Flash (latest stable)
     const model = genAI.getGenerativeModel({
-      model: "gemini-pro",
+      model: "gemini-1.5-flash-latest",
       generationConfig: {
         temperature: 0.8,
         maxOutputTokens: 500,
