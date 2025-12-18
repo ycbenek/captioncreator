@@ -44,9 +44,9 @@ KURALLAR:
 Caption:`;
 
   try {
-    // Gemini 1.5 Flash - hızlı ve ücretsiz
+    // Gemini Pro - stable and reliable
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-flash",
+      model: "gemini-pro",
       generationConfig: {
         temperature: 0.8,
         maxOutputTokens: 500,
