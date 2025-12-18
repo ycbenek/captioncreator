@@ -9,11 +9,9 @@ async function render() {
   const root = createRoot(document.getElementById("root") as Element);
 
   root.render(
-    <AppI18nProvider>
-      <AppUiProvider>
-        <App />
-      </AppUiProvider>
-    </AppI18nProvider>,
+    <AppUiProvider>
+      <App />
+    </AppUiProvider>,
   );
 }
 

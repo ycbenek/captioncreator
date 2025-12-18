@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useIntl } from "react-intl";
 import { useApp } from "../context/AppContext";
 import {
   Button,
@@ -25,7 +24,6 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
   onBack,
   onCaptionGenerated,
 }) => {
-  const intl = useIntl();
   const { canvaUserId, userInfo, fetchUserInfo } = useApp();
   const isSupported = useFeatureSupport();
 
@@ -153,18 +151,8 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
   return (
     <div className={styles.scrollContainer}>
       <Rows spacing="2u">
-        <Title size="medium">
-          {intl.formatMessage({
-            
-            defaultMessage: "Caption Settings",
-          })}
-        </Title>
-        <Text size="small">
-          {intl.formatMessage({
-            
-            defaultMessage: "Configure your caption preferences",
-          })}
-        </Text>
+        <Title size="medium">Caption Ayarları</Title>
+        <Text size="small">Caption tercihlerinizi yapılandırın</Text>
 
         {error && (
           <Alert tone="critical" onDismiss={() => setError(null)}>
@@ -174,22 +162,14 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
 
         {!canAddElement && (
           <Alert tone="warn">
-            {intl.formatMessage({
-              
-              defaultMessage:
-                "Some features may not be available in this design type",
-            })}
+            Bu tasarım tipinde bazı özellikler kullanılamayabilir
           </Alert>
         )}
 
         {designTexts.length > 0 && (
           <Rows spacing="0.5u">
             <Text size="xsmall" fontWeight="semibold">
-              {intl.formatMessage({
-                
-                defaultMessage: "Design texts",
-              })}
-              :
+              Tasarımdaki Metinler:
             </Text>
             {designTexts.map((text, idx) => (
               <Text key={idx} size="xsmall">
@@ -241,19 +221,10 @@ const SettingsScreen: React.FC<SettingsScreenProps> = ({
         {userInfo && (
           <Rows spacing="0.5u">
             <Text size="small" fontWeight="semibold">
-              {intl.formatMessage({
-                
-                defaultMessage: "Credits",
-              })}
+              Kredi
             </Text>
             <Text size="xsmall">
-              {intl.formatMessage(
-                {  },
-                {
-                  remaining: userInfo.credits.remaining,
-                  total: userInfo.credits.total,
-                },
-              )}
+              {userInfo.credits.remaining} / {userInfo.credits.total} kredi kaldı
             </Text>
           </Rows>
         )}

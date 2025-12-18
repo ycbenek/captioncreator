@@ -44,9 +44,9 @@ KURALLAR:
 Caption:`;
 
   try {
-    // Gemini 1.5 Pro - More quota on free tier
+    // Gemini 2.5 Flash - Latest stable with good quota
     const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-pro",
+      model: "gemini-2.5-flash",
       generationConfig: {
         temperature: 0.8,
         maxOutputTokens: 500,
