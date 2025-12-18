@@ -9,7 +9,8 @@ import { initDatabase } from "./db/init";
 dotenv.config();
 
 const app = express();
-const PORT = parseInt(process.env.CANVA_BACKEND_PORT || "3000", 10);
+// Railway uses PORT, local uses CANVA_BACKEND_PORT
+const PORT = parseInt(process.env.PORT || process.env.CANVA_BACKEND_PORT || "3000", 10);
 
 // Middleware - CORS yapılandırması
 app.use(
