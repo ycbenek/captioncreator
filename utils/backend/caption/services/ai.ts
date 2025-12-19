@@ -58,6 +58,9 @@ Caption:`;
     const response = await result.response;
     const caption = response.text().trim();
 
+    console.log("Generated caption length:", caption.length);
+    console.log("Generated caption:", caption);
+
     return caption;
   } catch (error: any) {
     console.error("Gemini API error:", error);
