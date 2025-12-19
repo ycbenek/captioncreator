@@ -180,3 +180,4 @@ Her iki port da şu anda kullanımda (bu normal):
 
 Canva'da test etmeye başlayabilirsiniz! 🚀
 
+

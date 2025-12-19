@@ -44,12 +44,12 @@ KURALLAR:
 Caption:`;
 
   try {
-    // Gemini 2.5 Flash - Latest stable with good quota
+    // Gemini 2.0 Flash - Fast and reliable
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: "gemini-2.0-flash",
       generationConfig: {
         temperature: 0.8,
-        maxOutputTokens: 500,
+        maxOutputTokens: 2000, // Increased for longer captions
       },
     });
 
