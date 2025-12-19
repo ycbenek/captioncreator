@@ -49,13 +49,38 @@ Caption:`;
       model: "gemini-2.0-flash",
       generationConfig: {
         temperature: 0.8,
-        maxOutputTokens: 2000, // Increased for longer captions
+        maxOutputTokens: 4096, // Maximum allowed
+        topP: 0.95,
+        topK: 40,
       },
+      safetySettings: [
+        {
+          category: "HARM_CATEGORY_HARASSMENT",
+          threshold: "BLOCK_NONE",
+        },
+        {
+          category: "HARM_CATEGORY_HATE_SPEECH",
+          threshold: "BLOCK_NONE",
+        },
+        {
+          category: "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          threshold: "BLOCK_NONE",
+        },
+        {
+          category: "HARM_CATEGORY_DANGEROUS_CONTENT",
+          threshold: "BLOCK_NONE",
+        },
+      ],
     });
 
     const result = await model.generateContent([systemPrompt, userPrompt]);
 
     const response = await result.response;
+    
+    // Check finish reason and safety ratings
+    console.log("Finish reason:", response.candidates?.[0]?.finishReason);
+    console.log("Safety ratings:", JSON.stringify(response.candidates?.[0]?.safetyRatings));
+    
     const caption = response.text().trim();
 
     console.log("Generated caption length:", caption.length);
