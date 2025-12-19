@@ -19,7 +19,7 @@ export async function generateCaption(
   const toneGuidelines = getToneGuidelines(tone);
   const languageCode = language === "tr" ? "Türkçe" : "English";
 
-  const systemPrompt = `Sen profesyonel bir sosyal medya içerik yazarısın. ${languageCode} dilinde, platforma uygun, etkili ve ilgi çekici gönderi açıklamaları oluşturursun.`;
+  const systemPrompt = `Sen profesyonel bir sosyal medya içerik yazarısın. ${languageCode} dilinde, platforma uygun, etkili ve ilgi çekici gönderi açıklamaları oluşturursun. Her zaman TAM ve EKSİKSİZ caption'lar yazarsın, asla yarıda bırakmazsın.`;
 
   const userPrompt = `Sen bir sosyal medya içerik uzmanısın. Aşağıdaki tasarım metinlerine göre ${languageCode} dilinde bir gönderi açıklaması (caption) oluştur.
 
@@ -33,15 +33,18 @@ ${toneGuidelines}
 Tasarım Metinleri:
 ${texts.map((text, i) => `${i + 1}. ${text}`).join("\n")}
 
-KURALLAR:
+ÖNEMLİ KURALLAR:
+- MUTLAKA tam ve eksiksiz bir caption yaz
+- Yarıda KESME, cümleleri tamamla
 - Sadece caption'ı yaz, başka açıklama ekleme
-- Platform için uygun uzunlukta ol
+- Platform için uygun uzunlukta ol (minimum 100 karakter)
 - Ton rehberine uy
 - ${languageCode} dilinde yaz
 - Emojileri doğal şekilde kullan
 - Gerekirse hashtag ekle (platform uygunsa)
+- Caption'ı bitirdiğinde noktalama işareti ile bitir
 
-Caption:`;
+Şimdi tam ve eksiksiz caption'ı yaz:`;
 
   try {
     // Gemini 2.0 Flash - Fast and reliable
